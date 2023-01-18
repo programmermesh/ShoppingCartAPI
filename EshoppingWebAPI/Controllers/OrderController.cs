@@ -85,6 +85,27 @@ namespace EShoppingWebAPI.Controllers
             return Ok();
         }
 
+        [HttpPut]
+        [Route("Update")]
+        public async Task<IActionResult> Update([FromQuery]int id, [FromBody]
+                     OrderUpdateRequestModel orderResource)
+        {
+               var order = await _unitOfWork.OrderRepository.GetByIdAsync(id).ConfigureAwait(false);
+
+            if (order == null)
+                return NotFound();
+
+            var mappedOrder = _mapper.Map<OrderUpdateRequestModel>(orderResource);
+
+            order.ShippingAdress = mappedOrder.ShippingAdress;
+
+            _unitOfWork.OrderRepository.Update(order);
+
+            await _unitOfWork.CompleteAsync().ConfigureAwait(false);
+
+            return Ok();
+        }
+
         [HttpDelete]
         [Route("{id}")]
         public async Task<IActionResult> Delete(int id)

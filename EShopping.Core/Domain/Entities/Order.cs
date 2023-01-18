@@ -12,7 +12,7 @@ namespace EShopping.Core.Domain.Entities
 
         public Guid? TrackingNumber { get; protected set; }
 
-        public string ShippingAdress { get; protected set; }
+        public string ShippingAdress { get;  set; }
 
         public DateTime OrderDate { get; protected set; }
 
