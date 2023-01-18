@@ -1,0 +1,14 @@
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\bin\Debug\net6.0\SharedKernel.deps.json
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\bin\Debug\net6.0\SharedKernel.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\bin\Debug\net6.0\SharedKernel.pdb
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\obj\Debug\net6.0\SharedKernel.csproj.AssemblyReference.cache
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\obj\Debug\net6.0\SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\obj\Debug\net6.0\SharedKernel.AssemblyInfoInputs.cache
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\obj\Debug\net6.0\SharedKernel.AssemblyInfo.cs
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\obj\Debug\net6.0\SharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\obj\Debug\net6.0\SharedKernel.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\obj\Debug\net6.0\refint\SharedKernel.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\obj\Debug\net6.0\SharedKernel.pdb
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\obj\Debug\net6.0\ref\SharedKernel.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\bin\Debug\net6.0\SharedKernel.runtimeconfig.json
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\SharedKernel\obj\Debug\net6.0\SharedKernel.genruntimeconfig.cache

@@ -1,0 +1,17 @@
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\bin\Debug\net6.0\GenericRepositoryEntityFramework.deps.json
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\bin\Debug\net6.0\GenericRepositoryEntityFramework.runtimeconfig.json
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\bin\Debug\net6.0\GenericRepositoryEntityFramework.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\bin\Debug\net6.0\GenericRepositoryEntityFramework.pdb
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\bin\Debug\net6.0\SharedKernel.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\bin\Debug\net6.0\SharedKernel.pdb
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\obj\Debug\net6.0\GenericRepositoryEntityFramework.csproj.AssemblyReference.cache
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\obj\Debug\net6.0\GenericRepositoryEntityFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\obj\Debug\net6.0\GenericRepositoryEntityFramework.AssemblyInfoInputs.cache
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\obj\Debug\net6.0\GenericRepositoryEntityFramework.AssemblyInfo.cs
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\obj\Debug\net6.0\GenericRepositoryEntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\obj\Debug\net6.0\GenericRepositoryEntityFramework.csproj.CopyComplete
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\obj\Debug\net6.0\GenericRepositoryEntityFramework.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\obj\Debug\net6.0\refint\GenericRepositoryEntityFramework.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\obj\Debug\net6.0\GenericRepositoryEntityFramework.pdb
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\obj\Debug\net6.0\GenericRepositoryEntityFramework.genruntimeconfig.cache
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\GenericRepositoryEntityFramework\obj\Debug\net6.0\ref\GenericRepositoryEntityFramework.dll
