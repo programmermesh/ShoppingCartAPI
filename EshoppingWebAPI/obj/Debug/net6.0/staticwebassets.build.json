@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "EpQdbRb+2OIrAyAswGVTCxvePgvSfr7IxId5GfzW6S0=",
+  "Source": "EshoppingWebAPI",
+  "BasePath": "_content/EshoppingWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
