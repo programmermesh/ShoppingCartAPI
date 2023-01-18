@@ -86,3 +86,8 @@ C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EshoppingWebAPI\obj\Debug\net
 C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EshoppingWebAPI\obj\Debug\net6.0\EshoppingWebAPI.pdb
 C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EshoppingWebAPI\obj\Debug\net6.0\EshoppingWebAPI.genruntimeconfig.cache
 C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EshoppingWebAPI\obj\Debug\net6.0\ref\EshoppingWebAPI.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
