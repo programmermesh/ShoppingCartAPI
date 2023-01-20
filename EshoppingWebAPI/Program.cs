@@ -9,8 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddDbContext<EShoppingDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("EShoppingDB")));
+options.UseSqlServer(builder.Configuration.GetConnectionString("EShoppingDB"),
+    b => b.MigrationsAssembly(typeof(EShoppingDbContext).Assembly.FullName)));
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
@@ -27,6 +29,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 
 app.UseAuthorization();
 

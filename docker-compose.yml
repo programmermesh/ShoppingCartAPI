@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  eshoppingwebapi:
+    image: ${DOCKER_REGISTRY-}eshoppingwebapi
+    build:
+      context: .
+      dockerfile: EshoppingWebAPI\Dockerfile
+    depends_on:
+        - cart.db
+    ports:
+      - "5020:80"
+
+  cart.db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: shoppingcartdb
+    hostname: shoppingcart
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=password@1
+    restart: unless-stopped
+    ports:
+      - "1433:1433"
+
+   
+        
+

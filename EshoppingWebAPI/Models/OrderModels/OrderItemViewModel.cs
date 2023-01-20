@@ -8,6 +8,6 @@ namespace EShoppingWebAPI.Models.OrderModels
 
         public int ProductId { get; set; }
 
-        public Price Price { get; set; }
+        public Price? Price { get; set; }
     }
 }

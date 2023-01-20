@@ -76,7 +76,7 @@ namespace EShopping.Core.Domain.Entities
             {
                 throw new BusinessRuleBrokenException("Maximum price has been reached !");
             }
-
+            orderItem.Price.ToString();
             _orderItems.Add(orderItem);
         }
 
