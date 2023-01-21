@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m/FQPZ+3OBBmbcjh9LuYSK1ZdjZ4e71qRwbA0XGtjBJb/d73jvBzhEGq/q98ALgl+J1no2Z1JiUE1o4Z+Los0A==",
+  "dgSpecHash": "zOH9Azln9NuN6JCsJ91NKfysFCPIbcx/MavsbC1g1OU1j2M2R/QZQ7Ou3gkeZJY2SAba5H8fU6xYlnf2uvDhNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj",
+  "projectFilePath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Josephhm\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Josephhm\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

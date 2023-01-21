@@ -138,6 +138,25 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -1659,6 +1678,21 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.0": {
+      "sha512": "1mnjZaEH9LWfbuCfYYil64TZ6G/hnODd+WKBjEbQx5/SPjypj+2LzQ43M09JXWyRvPpjiefl/wxV0q/ACqZLRw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.xml",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -4366,6 +4400,7 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "EShopping.Core >= 1.0.0",
       "FluentValidation.AspNetCore >= 11.2.2",
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
@@ -4381,11 +4416,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj",
       "projectName": "EshoppingWebAPI",
-      "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj",
+      "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj",
       "packagesPath": "C:\\Users\\Josephhm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EshoppingWebAPI\\obj\\",
+      "outputPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EshoppingWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Josephhm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4402,11 +4437,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj": {
-              "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj"
+            "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj": {
+              "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj"
             },
-            "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj": {
-              "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj"
+            "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj": {
+              "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj"
             }
           }
         }
@@ -4432,6 +4467,10 @@
           "FluentValidation.AspNetCore": {
             "target": "Package",
             "version": "[11.2.2, )"
+          },
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

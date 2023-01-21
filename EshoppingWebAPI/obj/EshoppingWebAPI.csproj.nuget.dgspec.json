@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj": {}
+    "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj": {
+    "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj",
         "projectName": "EShopping.Core",
-        "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj",
+        "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj",
         "packagesPath": "C:\\Users\\Josephhm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EShopping.Core\\obj\\",
+        "outputPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EShopping.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Josephhm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj": {
-                "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj"
+              "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj": {
+                "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj"
               },
-              "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj": {
-                "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj"
+              "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj"
               }
             }
           }
@@ -104,14 +104,14 @@
         }
       }
     },
-    "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj": {
+    "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj",
         "projectName": "EshoppingWebAPI",
-        "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj",
+        "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj",
         "packagesPath": "C:\\Users\\Josephhm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EshoppingWebAPI\\obj\\",
+        "outputPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EshoppingWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Josephhm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -128,11 +128,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj": {
-                "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj"
+              "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj": {
+                "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj"
               },
-              "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj": {
-                "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj"
+              "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj"
               }
             }
           }
@@ -158,6 +158,10 @@
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.2.2, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -211,14 +215,14 @@
         }
       }
     },
-    "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj": {
+    "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj",
+        "projectUniqueName": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj",
         "projectName": "GenericRepositoryEntityFramework",
-        "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj",
+        "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\GenericRepositoryEntityFramework.csproj",
         "packagesPath": "C:\\Users\\Josephhm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\obj\\",
+        "outputPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\GenericRepositoryEntityFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Josephhm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -235,8 +239,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj": {
-                "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj"
+              "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj"
               }
             }
           }
@@ -286,14 +290,14 @@
         }
       }
     },
-    "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj": {
+    "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj",
+        "projectUniqueName": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj",
         "projectName": "SharedKernel",
-        "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj",
+        "projectPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj",
         "packagesPath": "C:\\Users\\Josephhm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\obj\\",
+        "outputPath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Josephhm\\AppData\\Roaming\\NuGet\\NuGet.Config",

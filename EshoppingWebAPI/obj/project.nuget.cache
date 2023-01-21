@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hGXEqjpI5+My4fSwuzRR+F+GOqwTYo8RFVpd3wINwWwZGwnz1diKkG55w6vHGs4rjtFxJQxsmeOG+RzThi6ktw==",
+  "dgSpecHash": "T0ZAXbidmyVJgOc6eZXkeILKxudM9A5K/xT2zNFCAUx2iNPCVmLNJUpDa1RcCyOYNv7/Wa6mitSSiIGw4S5V8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EshoppingWebAPI\\EshoppingWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Josephhm\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Josephhm\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
@@ -12,6 +12,7 @@
     "C:\\Users\\Josephhm\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
     "C:\\Users\\Josephhm\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\Josephhm\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Josephhm\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.0\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\Josephhm\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Josephhm\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Josephhm\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

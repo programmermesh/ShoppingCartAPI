@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oLm3ulI/0JN+Yta9k9uekKf+fndvUMHplE1cKvXDbDXqxsSmAyZA3rkh+bKzSh505pK01fxZsZMt+c/y1LKYAA==",
+  "dgSpecHash": "6zxhT4n4hnNmFo67JDIq9DJlGI6MykVkcxknGq5PAWAqOW+/yCfKyVwGoLqqdvAkrVJKXSzmwCpmabrVtbW8MQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj",
+  "projectFilePath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\SharedKernel\\SharedKernel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Josephhm\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Josephhm\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",

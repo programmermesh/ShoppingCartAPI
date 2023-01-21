@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>d8326323-12b1-4eab-b904-1bd708e46af7</ProjectGuid>
+    <ProjectGuid>403fcee7-c788-4157-8146-8f4a385ee9df</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>eshoppingwebapi</DockerServiceName>

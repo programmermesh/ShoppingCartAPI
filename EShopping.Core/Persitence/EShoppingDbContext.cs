@@ -21,5 +21,6 @@ namespace EShopping.Core.Persistence
 
             base.OnModelCreating(modelBuilder);
         }
+
     }
 }

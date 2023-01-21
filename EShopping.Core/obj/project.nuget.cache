@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PbdF8/7PSKBi9wxqmecW4DCzA+Rij/DRSHDKfJP41t1HCWvgWF3hDn8TwRpcHd9W3iWW6XOOKFofC8mtT1SwoA==",
+  "dgSpecHash": "ws8w+TLHexDSkQ+gDWPjWF/AQevICoES3xy592ehrLu1BHYfp66ae5em/okZ1rfKOA20Xdjxopp4SJ3LYs1ltg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj",
+  "projectFilePath": "C:\\Users\\Josephhm\\Documents\\GitHub\\ShoppingCart\\ShoppingCartAPI\\EShopping.Core\\EShopping.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Josephhm\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Josephhm\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

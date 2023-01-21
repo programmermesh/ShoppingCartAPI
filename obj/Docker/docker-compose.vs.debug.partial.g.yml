@@ -14,8 +14,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EshoppingWebAPI:/app
-      - C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI:/src
+      - C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI:/app
+      - C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI:/src
       - C:\Users\Josephhm\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\Josephhm\.nuget\packages\:/root/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
