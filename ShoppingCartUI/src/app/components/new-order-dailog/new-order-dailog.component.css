@@ -1,0 +1,12 @@
+.dialogDiv{
+    background: white !important;
+}
+
+.offset{
+    margin-left: 20px;
+}
+
+.mat-form-field {
+    width: 85%;
+    margin-top: 10px;
+  }
