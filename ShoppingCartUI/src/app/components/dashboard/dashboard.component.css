@@ -115,11 +115,6 @@
     width: 100%;
   }
 
-  .addOrder{
-    margin-left: 520px;
-    margin-bottom: 20px;
-  }
-
   .mat-mdc-row .mat-mdc-cell {
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
@@ -127,4 +122,19 @@
 
   .bg-color mat-dialog-container{
     background: white !important;
+  }
+
+  .offset{
+    margin-left: 20px;
+}
+
+.mat-form-field {
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  .addOrder2{
+    margin-left: 520px;
+    margin-bottom: 20px;
+    margin-right: 10px;
   }

@@ -14,7 +14,7 @@ namespace EShopping.Core.Persistence.Mappings
 
             builder.Property(o => o.Id).ValueGeneratedOnAdd().HasColumnName("Id");
 
-            builder.Property(en => en.ProductId).HasColumnName("ProductId").IsRequired();
+            builder.Property(en => en.ProductName).HasColumnName("ProductName").IsRequired();
 
             builder.OwnsOne(en => en.Price, price =>
             {

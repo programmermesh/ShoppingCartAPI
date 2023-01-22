@@ -44,11 +44,14 @@ C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\appset
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\EshoppingWebAPI.exe
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\EshoppingWebAPI.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.EntityFrameworkCore.dll
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\FluentValidation.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\EShopping.Core.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\FluentValidation.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\AutoMapper.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\SharedKernel.dll
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
@@ -63,10 +66,9 @@ C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Micros
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.Extensions.Options.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.OpenApi.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.OpenApi.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.Data.SqlClient.dll
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.Identity.Client.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\EshoppingWebAPI.pdb
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\EShopping.Core.pdb
@@ -75,5 +77,3 @@ C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Generi
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\obj\Debug\docker-compose.dcproj.CopyComplete
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.Extensions.Configuration.dll
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\bin\Debug\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll

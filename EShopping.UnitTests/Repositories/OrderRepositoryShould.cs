@@ -36,7 +36,7 @@ namespace EShopping.UnitTests.Repositories
             // arrange
             var order = new Order("NIGERIA", new OrderItem[]
                                     {
-                                        new OrderItem (3, new Price(2000, MoneyUnit.Naira))
+                                        new OrderItem ("test", new Price(2000, MoneyUnit.Naira))
                                     });
 
             // act

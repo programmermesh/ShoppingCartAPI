@@ -8,7 +8,7 @@ namespace EShopping.Core.Domain.Entities
     {
         public int Id { get; protected set; }
 
-        public int ProductId { get; protected set; }
+        public string ProductName { get; protected set; }
 
         public Price Price { get; protected set; }
 
@@ -19,9 +19,9 @@ namespace EShopping.Core.Domain.Entities
         {
         }
 
-        public OrderItem(int productId, Price price)
+        public OrderItem(string ProductName, Price price)
         {
-            ProductId = productId;
+            ProductName = ProductName;
 
             Price = price;
 
@@ -30,7 +30,7 @@ namespace EShopping.Core.Domain.Entities
 
         private void CheckForBrokenRules()
         {
-            if (ProductId == 0)
+            if (ProductName == null)
                 throw new BusinessRuleBrokenException("You must supply valid Product!");
 
             if (Price is null)

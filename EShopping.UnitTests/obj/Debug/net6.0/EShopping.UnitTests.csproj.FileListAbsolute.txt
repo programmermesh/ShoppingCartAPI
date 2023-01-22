@@ -168,6 +168,11 @@ C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EShopping.UnitTests\obj\Debug
 C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.genruntimeconfig.cache
 C:\Users\Josephhm\Documents\GitHub\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\ref\EShopping.UnitTests.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.csproj.AssemblyReference.cache
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.AssemblyInfoInputs.cache
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.AssemblyInfo.cs
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.csproj.CoreCompileInputs.cache
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\bin\Debug\net6.0\testhost.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\bin\Debug\net6.0\testhost.exe
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -325,11 +330,6 @@ C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTe
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\bin\Debug\net6.0\EShopping.Core.pdb
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\bin\Debug\net6.0\GenericRepositoryEntityFramework.pdb
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\bin\Debug\net6.0\SharedKernel.pdb
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.csproj.AssemblyReference.cache
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.AssemblyInfoInputs.cache
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.AssemblyInfo.cs
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.csproj.CoreCompileInputs.cache
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.csproj.CopyComplete
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\EShopping.UnitTests.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EShopping.UnitTests\obj\Debug\net6.0\refint\EShopping.UnitTests.dll

@@ -113,6 +113,7 @@ C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -198,4 +199,3 @@ C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\obj\Debug\net6.0\EshoppingWebAPI.pdb
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\obj\Debug\net6.0\EshoppingWebAPI.genruntimeconfig.cache
 C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\obj\Debug\net6.0\ref\EshoppingWebAPI.dll
-C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\EshoppingWebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll

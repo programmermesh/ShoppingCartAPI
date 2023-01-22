@@ -1,10 +1,9 @@
 name: dockercompose5688439581740450165
 services:
   db:
-    container_name: shoppingcartdb
     environment:
       ACCEPT_EULA: "Y"
-      MSSQL_SA_PASSWORD: password@1
+      SA_PASSWORD: password@1
     image: mcr.microsoft.com/mssql/server:2022-latest
     networks:
       default: null
@@ -22,9 +21,6 @@ services:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      DB_HOST: db
-      DB_NAME: EShoppingDB
-      DB_SA_PASSWORD: password@1
     image: eshoppingwebapi
     networks:
       default: null
@@ -34,7 +30,19 @@ services:
       protocol: tcp
     - mode: ingress
       target: 80
-      published: "8001"
+      published: "3200"
+      protocol: tcp
+  shoppingcartui:
+    build:
+      context: C:\Users\Josephhm\Documents\GitHub\ShoppingCart\ShoppingCartAPI\shoppingCartUI
+      dockerfile: DockerFile
+    image: shoppingcartui
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "4201"
       protocol: tcp
 networks:
   default:

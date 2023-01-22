@@ -26,11 +26,11 @@ namespace EShopping.UnitTests.Entities
         public void Test_OrderItemsProperty_AddingOrderItemToReadOnlyCollection_ExpectsNotSupportedException()
         {
             // arrange
-            var order = new Order("IRAN", new OrderItem[] { new OrderItem(1, new Price(1, MoneyUnit.Dollar)) });
+            var order = new Order("IRAN", new OrderItem[] { new OrderItem("test", new Price(1, MoneyUnit.Dollar)) });
 
 
             // act
-            TestDelegate testDelegate = () => order.OrderItems.Add(new OrderItem(1, new Price(1, MoneyUnit.Dollar)));
+            TestDelegate testDelegate = () => order.OrderItems.Add(new OrderItem("test", new Price(1, MoneyUnit.Dollar)));
 
 
             // assert
@@ -43,9 +43,9 @@ namespace EShopping.UnitTests.Entities
         {
             // arrange
 
-            var orderItem1 = new OrderItem(1, new Price(5000, MoneyUnit.Dollar));
+            var orderItem1 = new OrderItem("test", new Price(5000, MoneyUnit.Dollar));
 
-            var orderItem2 = new OrderItem(2, new Price(6000, MoneyUnit.Dollar));
+            var orderItem2 = new OrderItem("test", new Price(6000, MoneyUnit.Dollar));
 
             // act
             TestDelegate testDelegate = () =>
@@ -66,9 +66,9 @@ namespace EShopping.UnitTests.Entities
         {
             // arrange
 
-            var orderItem1 = new OrderItem(1, new Price(5000, MoneyUnit.Dollar));
+            var orderItem1 = new OrderItem("test", new Price(5000, MoneyUnit.Dollar));
 
-            var orderItem2 = new OrderItem(2, new Price(6000, MoneyUnit.Dollar));
+            var orderItem2 = new OrderItem("test", new Price(6000, MoneyUnit.Dollar));
 
             // act
             TestDelegate testDelegate = () =>

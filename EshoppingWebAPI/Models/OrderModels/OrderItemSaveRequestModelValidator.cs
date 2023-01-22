@@ -7,7 +7,7 @@ namespace EShoppingWebAPI.Models.OrderModels
     {
         public OrderItemSaveRequestModelValidator()
         {
-            RuleFor(x => x.ProductId)
+            RuleFor(x => x.ProductName)
             .NotNull().WithMessage("Please enter a product");
 
             RuleFor(x => x.Price)

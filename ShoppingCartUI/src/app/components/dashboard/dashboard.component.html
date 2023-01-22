@@ -27,9 +27,11 @@
       <span>{{ title }} tracker</span>
   
     </div>
-    <button (click)="newOrderDialog()" class="addOrder" mat-fab extended color="warn">
+    <button (click)="openNewModal()" class="addOrder2" mat-fab extended color="warn">
       <mat-icon>add_shopping_cart</mat-icon>New Order
     </button>
+
+    <!-------------------------------- Views   ---------------------->
       <div class="mat-elevation-z8">
         <table mat-table [dataSource]="dataSource">
       
@@ -39,46 +41,46 @@
             <td mat-cell *matCellDef="let element">{{element.Id}}</td>
           </ng-container>
       
-          <!-- ProductId Column -->
-          <ng-container matColumnDef="ProductId">
-            <th mat-header-cell *matHeaderCellDef> Product Id </th>
-            <td mat-cell *matCellDef="let element"></td>
+          <!-- ProductName Column -->
+          <ng-container matColumnDef="ProductName">
+            <th mat-header-cell *matHeaderCellDef> Product Name </th>
+            <td mat-cell *matCellDef="let element">{{element.ProductName}}</td>
           </ng-container>
       
           <!-- Amount Column -->
           <ng-container matColumnDef="Amount">
             <th mat-header-cell *matHeaderCellDef> Amount </th>
-            <td mat-cell *matCellDef="let element"></td>
+            <td mat-cell *matCellDef="let element">{{element.Amount}}</td>
           </ng-container>
       
           <!-- OrderId Column -->
           <ng-container matColumnDef="OrderId">
             <th mat-header-cell *matHeaderCellDef> Order Id </th>
-            <td mat-cell *matCellDef="let element"></td>
+            <td mat-cell *matCellDef="let element">{{element.OrderId}}</td>
           </ng-container>
   
           <!-- TrackNumber Column -->
           <ng-container matColumnDef="TrackNumber">
             <th mat-header-cell *matHeaderCellDef> Track Number </th>
-            <td mat-cell *matCellDef="let element"></td>
+            <td mat-cell *matCellDef="let element">{{element.TrackNumber}}</td>
           </ng-container>
   
           <!--  ShippingAddress Column -->
           <ng-container matColumnDef="ShippingAddress">
             <th mat-header-cell *matHeaderCellDef>  Shipping Address </th>
-            <td mat-cell *matCellDef="let element"></td>
+            <td mat-cell *matCellDef="let element">{{element.ShippingAddress}}</td>
           </ng-container>
   
           <!-- OrderDate Column -->
           <ng-container matColumnDef="OrderDate">
             <th mat-header-cell *matHeaderCellDef> Order Date </th>
-            <td mat-cell *matCellDef="let element"></td>
+            <td mat-cell *matCellDef="let element">{{element.OrderDate}}</td>
           </ng-container>
   
           <ng-container matColumnDef="Actions" >
             <mat-header-cell *matHeaderCellDef></mat-header-cell>
             <mat-cell *matCellDef="let element;">
-              <button mat-icon-button>
+              <button mat-icon-button (click)="onSelected(element)"  (click)="openUpdateModal()">
                 <mat-icon  style="color: yellow;">launch</mat-icon>        
               </button>
               <button mat-icon-button>
@@ -103,3 +105,91 @@
       </div>
     </div>
   
+    <!-------------------------------- Update Modal   ---------------------->
+    <ng-template #updateModal>
+      <h1 mat-dialog-title>Edit Order</h1>
+      <div>
+            <form [formGroup]="updateForm" autocomplete="off">
+              <div class="offset">
+                  <mat-form-field appearance="fill">
+                      <mat-label>ID</mat-label>
+                      <input matInput placeholder="ID" formControlName="Id" [(ngModel)]="selectedOrder.Id" readonly>
+                    </mat-form-field>
+
+                  <mat-form-field appearance="fill" class="offset">
+                      <mat-label>Product Name</mat-label>
+                      <input matInput placeholder="Product Name" formControlName="productName" [(ngModel)]="selectedOrder.ProductName" readonly>
+                    </mat-form-field>
+          
+                    <mat-form-field appearance="fill" class="offset">
+                      <mat-label>Currency</mat-label>
+                      <input matInput placeholder="currency" formControlName="unit" [(ngModel)]="selectedOrder.unit" readonly>
+                  </mat-form-field>
+              </div>
+              <div>   
+                <mat-form-field appearance="fill" class="offset">
+                  <mat-label>Enter Amount</mat-label>
+                  <input matInput placeholder="Amount" formControlName="amount" [(ngModel)]="selectedOrder.Amount" readonly>
+                </mat-form-field> 
+                
+                  <mat-form-field appearance="fill" class="offset mat-form-field">
+                      <mat-label>Enter Shipping Address</mat-label>
+                      <input matInput placeholder="Shipping Address" formControlName="shippingAddress" [(ngModel)]="selectedOrder.ShippingAddress" readonly>
+                    </mat-form-field>
+              </div>
+      
+              <div class="offset">
+                <button class="addOrder" mat-fab extended style="color: black;" (click)="closeModal()"> 
+                  <mat-icon>cancel</mat-icon>Cancel
+                </button>
+                <button mat-fab extended color="primary" style="color: white;"> 
+                  <mat-icon>save</mat-icon>Save
+                </button>
+              </div>
+            </form>
+          </div>
+    </ng-template>
+
+    <!-------------------------------- Create Modal   ---------------------->
+    <ng-template #newModal>
+      <h1 mat-dialog-title>Create New Order</h1>
+      <div>
+            <form [formGroup]="orderForm" autocomplete="off">
+              <div class="offset">
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter Product Name</mat-label>
+                    <input matInput placeholder="Product Name" formControlName="productName" type="text">
+                  </mat-form-field>
+        
+                  <mat-form-field appearance="fill" class="offset">
+                    <mat-label>Select Currency</mat-label>
+                    <mat-select formControlName="unit">
+                      <mat-option value="1">NGN</mat-option>
+                      <mat-option value="2">USD</mat-option>
+                      <mat-option value="3">EUR</mat-option>
+                    </mat-select>
+                </mat-form-field>
+    
+                <mat-form-field appearance="fill" class="offset">
+                    <mat-label>Enter Amount</mat-label>
+                    <input matInput placeholder="Amount" formControlName="amount" type="number">
+                  </mat-form-field>
+            </div>
+            <div>    
+                <mat-form-field appearance="fill" class="offset mat-form-field">
+                    <mat-label>Enter Shipping Address</mat-label>
+                    <textarea matInput placeholder="Shipping Address" formControlName="shippingAddress"></textarea>
+                  </mat-form-field>
+            </div>
+    
+            <div class="offset">
+              <button (click)="closeModal()" class="addOrder" mat-fab extended style="color: black;"> 
+                <mat-icon>cancel</mat-icon>Cancel
+              </button>
+              <button (click)="createOrder()" mat-fab extended color="primary" style="color: white;"> 
+                <mat-icon>save</mat-icon>Save
+              </button>
+            </div>
+            </form>
+          </div>
+    </ng-template>
