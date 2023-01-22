@@ -28,9 +28,13 @@
               </mat-form-field>
         </div>
 
-        <div class="main-button-div offset-md-1">
-          <button (click)="onCloseDialog()" mat-raised-button style="color: gray;">Close</button>
-          <button (click)="onCloseDialog()" mat-raised-button style="color: blue;">Save</button>
+        <div class="offset">
+          <button (click)="onCloseDialog()" class="addOrder" mat-fab extended style="color: black;"> 
+            <mat-icon>cancel</mat-icon>Cancel
+          </button>
+          <button (click)="onCloseDialog()" mat-fab extended color="primary" style="color: white;"> 
+            <mat-icon>save</mat-icon>Save
+          </button>
         </div>
       </form>
     </div>

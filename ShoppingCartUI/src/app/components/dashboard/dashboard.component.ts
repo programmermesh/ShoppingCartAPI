@@ -37,7 +37,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
 
   newOrderDialog() {
     this.newOrderDialogRef = this.dialog.open(NewOrderDailogComponent,{
-      minHeight:'400px',
+      minHeight:'350px',
       minWidth:'800px'
     });
   }
