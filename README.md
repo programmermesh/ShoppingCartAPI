@@ -1,5 +1,5 @@
 # ShoppingCartAPI
-WebAPI with CRUD operations for shoppingCart
+WebAPI with CRUD operations for shoppingCart - .Net6 & Angular 14
 
 # Usage
 
