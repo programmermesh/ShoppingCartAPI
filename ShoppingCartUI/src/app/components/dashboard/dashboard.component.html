@@ -50,7 +50,7 @@
           <!-- Amount Column -->
           <ng-container matColumnDef="Amount">
             <th mat-header-cell *matHeaderCellDef> Amount </th>
-            <td mat-cell *matCellDef="let element">{{element.Amount}}</td>
+            <td mat-cell *matCellDef="let element">{{element.Unit}}{{element.Amount}}</td>
           </ng-container>
       
           <!-- OrderId Column -->
@@ -164,9 +164,9 @@
                   <mat-form-field appearance="fill" class="offset">
                     <mat-label>Select Currency</mat-label>
                     <mat-select formControlName="unit">
-                      <mat-option value="1">NGN</mat-option>
-                      <mat-option value="2">USD</mat-option>
-                      <mat-option value="3">EUR</mat-option>
+                      <mat-option value=1 type= "number">NGN</mat-option>
+                      <mat-option value=2>USD</mat-option>
+                      <mat-option value=3>EUR</mat-option>
                     </mat-select>
                 </mat-form-field>
     

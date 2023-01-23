@@ -4,6 +4,7 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table'
 import { OrderData } from 'src/app/Models/OrderData';
+import { ApiService } from 'src/app/services/api.service';
 import { NotificationService } from 'src/app/services/notification.service';
 
 
@@ -15,9 +16,19 @@ import { NotificationService } from 'src/app/services/notification.service';
 export class DashboardComponent implements OnInit, AfterViewInit {
   title = 'ShoppingCart';
   selectedOrder: any;
+    Id: number;
+    ProductName: string;
+    Amount: number;
+    OrderId:number;
+    TrackNumber: string;
+    ShippingAddress: string;
+    Unit: number
+    OrderDate: string;
+
+  result: any[] = [];
   orderForm: FormGroup;
   updateForm: FormGroup;
-  orders: OrderData[] = [];
+  orders: any[] = [];
   @ViewChild("updateModal", { static: true }) updateModal: TemplateRef<any>;
   @ViewChild("newModal", { static: true }) newModal: TemplateRef<any>;
   
@@ -27,7 +38,10 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   dataSource = new MatTableDataSource<OrderData>([]);
 
   
-  constructor(public dialog: MatDialog, private _formBuilder: FormBuilder,private notificationService: NotificationService) {
+  constructor(public dialog: MatDialog, private _formBuilder: FormBuilder,
+              private notificationService: NotificationService, 
+              private apiService: ApiService) {
+
     this.orderForm = this._formBuilder.group({
       productName: ["", [Validators.required]],
       amount: ["", Validators.required],
@@ -45,54 +59,132 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   }
   
   ngOnInit(): void {
-
-    this.orders = [    
-      {Id: 1, ProductName: 'Bread', Amount: 1.0079, OrderId: 454545856, TrackNumber: '4464646445', ShippingAddress:'shsbhsjhjsv', OrderDate: 'bxcxcjshskd'},
-      {Id: 2, ProductName: 'Bread', Amount: 1.0079, OrderId: 454545856, TrackNumber: '4464646445', ShippingAddress:'shsbhsjhjsv', OrderDate: 'bxcxcjshskd'},
-      {Id: 3, ProductName: 'Bread', Amount: 1.0079, OrderId: 454545856, TrackNumber: '4464646445', ShippingAddress:'shsbhsjhjsv', OrderDate: 'bxcxcjshskd'},
-      {Id: 1, ProductName: 'Bread', Amount: 1.0079, OrderId: 454545856, TrackNumber: '4464646445', ShippingAddress:'shsbhsjhjsv', OrderDate: 'bxcxcjshskd'},
-      {Id: 1, ProductName: 'Bread', Amount: 1.0079, OrderId: 454545856, TrackNumber: '4464646445', ShippingAddress:'shsbhsjhjsv', OrderDate: 'bxcxcjshskd'},
-      {Id: 1, ProductName: 'Bread', Amount: 1.0079, OrderId: 454545856, TrackNumber: '4464646445', ShippingAddress:'shsbhsjhjsv', OrderDate: 'bxcxcjshskd'},
-      {Id: 1, ProductName: 'Bread', Amount: 1.0079, OrderId: 454545856, TrackNumber: '4464646445', ShippingAddress:'shsbhsjhjsv', OrderDate: 'bxcxcjshskd'},
-      {Id: 1, ProductName: 'Bread', Amount: 1.0079, OrderId: 454545856, TrackNumber: '4464646445', ShippingAddress:'shsbhsjhjsv', OrderDate: 'bxcxcjshskd'},
-      {Id: 1, ProductName: 'Bread', Amount: 1.0079, OrderId: 454545856, TrackNumber: '4464646445', ShippingAddress:'shsbhsjhjsv', OrderDate: 'bxcxcjshskd'},
-      {Id: 1, ProductName: 'Bread', Amount: 1.0079, OrderId: 454545856, TrackNumber: '4464646445', ShippingAddress:'shsbhsjhjsv', OrderDate: 'bxcxcjshskd'}
-    ]
-
-      this.dataSource = new MatTableDataSource<OrderData>(this.orders)
-  }
-
-  
-  
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-  }
-
+      this.getAllOrders();
+    //   this.orders = [
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    //     {
+    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
+    //   },
+    // ]
+    // this.dataSource = new MatTableDataSource<OrderData>(this.orders)
+    }
+    
+    
+    
+    ngAfterViewInit() {
+      this.dataSource.paginator = this.paginator;
+    }
+    
     /* ----------==========     OnSelected User    ==========---------- */
-
+    
     onSelected(row: any) {
       this.selectedOrder = row;
       console.log(this.selectedOrder);
     }
-
+    
+    /* ----------==========     Subscribing to the order service to create new order    ==========---------- */
     createOrder(){
       if (this.orderForm.invalid) {
         return this.notificationService.error("Kindly fill all fields");
       }
       let model = {
-        shippingAddress: this.orderForm.value.shippingAddress,
-        "orderItemsDtoModel": [
+        "shippingAdress": this.orderForm.value.shippingAddress,
+        "orderItemsDtoModel": 
+        [
           {
-            productName: this.orderForm.value.productName,
+            "productName": this.orderForm.value.productName,
             "price": {
-              amount: this.orderForm.value.amount,
-              unit: this.orderForm.value.unit
+              "amount": this.orderForm.value.amount,
+              "unit": parseInt(this.orderForm.value.unit)
             }
           }
+          
         ]
       }
-
+      this.apiService.createUser(model).subscribe((data:any) =>{
+        this.notificationService.success("Order created successfuly");
+        this.orderForm.reset();
+        this.closeModal();
+      })
     }
+    
+    /* ----------==========     Get All Orders    ==========---------- */
+    getAllOrders(){
+      this.apiService.getAllOrders().subscribe((data:any) =>{
+        let hmm = new Array ;
+        this.orders = data.entities;
+        
+        data.entities.forEach((x:any) => {
+          x.orderItems.forEach((y:any) => {
+            switch(y.price.unit) {
+              case 1:
+                y.price.unit = "N"
+                break;
+              case 2:
+                y.price.unit = "$"
+                break;
+              default:
+                y.price.unit = "€"
+            }
+            this.result.push(
+              {
+                "Id" :  x.id,
+                "TrackNumber" :  x.trackingNumber,
+                "OrderDate": x.orderDate,
+                "ShippingAddress": x.shippingAdress,
+                "OrderId": y.id,
+                "ProductName": y.productName,
+                "Amount": y.price.amount,
+                "Unit": y.price.unit
+              } )
+              console.log(this.result)
+              this.dataSource = new MatTableDataSource<OrderData>(this.result)
+            });
+            
+        });
+     })
+  }
 
     openUpdateModal(){
       this.dialog.open(this.updateModal,{

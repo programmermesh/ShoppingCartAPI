@@ -32,6 +32,11 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
+        builder.Services.AddCors(p => p.AddPolicy("corspolicy", builder =>
+        {
+            builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+        }));
+
         var app = builder.Build();
 
         SeedDatabase();
@@ -51,6 +56,7 @@ public class Program
         //{
         //}
 
+        app.UseCors("corspolicy");
 
         app.UseAuthorization();
 

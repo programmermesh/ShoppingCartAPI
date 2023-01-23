@@ -21,7 +21,7 @@ namespace EShopping.Core.Domain.Entities
 
         public OrderItem(string ProductName, Price price)
         {
-            ProductName = ProductName;
+            this.ProductName = ProductName;
 
             Price = price;
 

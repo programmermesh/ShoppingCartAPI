@@ -15,6 +15,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule  } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatTableModule,
     MatPaginatorModule,
     MatButtonModule,
+    HttpClientModule,
     MatIconModule,
     MatDialogModule,
     MatSnackBarModule,
