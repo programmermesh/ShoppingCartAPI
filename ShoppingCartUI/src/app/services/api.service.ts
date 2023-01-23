@@ -21,4 +21,9 @@ export class ApiService {
     return this._http.get(AppSettings.API_ENDPOINT + "api/Order/GetAll");
   }
 
+   /* ----------==========     Get All Orders    ==========---------- */
+   updateShippinOrders(id: any, model:any) {
+    return this._http.put(AppSettings.API_ENDPOINT + `api/Order/Update?id=${id}`, model);
+  }
+
 }

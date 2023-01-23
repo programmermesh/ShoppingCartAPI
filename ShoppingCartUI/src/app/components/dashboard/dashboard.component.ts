@@ -1,6 +1,6 @@
 import {Component, AfterViewInit, ViewChild, OnInit, TemplateRef } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog} from '@angular/material/dialog';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table'
 import { OrderData } from 'src/app/Models/OrderData';
@@ -14,15 +14,9 @@ import { NotificationService } from 'src/app/services/notification.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit, AfterViewInit {
-  title = 'ShoppingCart';
-  selectedOrder: any;
+    title = 'ShoppingCart';
+    selectedOrder: any;
     Id: number;
-    ProductName: string;
-    Amount: number;
-    OrderId:number;
-    TrackNumber: string;
-    ShippingAddress: string;
-    Unit: number
     OrderDate: string;
 
   result: any[] = [];
@@ -107,7 +101,6 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
     //   },
     // ]
-    // this.dataSource = new MatTableDataSource<OrderData>(this.orders)
     }
     
     
@@ -152,7 +145,6 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     /* ----------==========     Get All Orders    ==========---------- */
     getAllOrders(){
       this.apiService.getAllOrders().subscribe((data:any) =>{
-        let hmm = new Array ;
         this.orders = data.entities;
         
         data.entities.forEach((x:any) => {
@@ -186,10 +178,23 @@ export class DashboardComponent implements OnInit, AfterViewInit {
      })
   }
 
+    
+    /* ----------==========     Update Shipping Order    ==========---------- */
+    updateShippinOrders(){
+      this.Id = this.selectedOrder.Id;
+      let model ={
+        shippingAdress : this.selectedOrder.ShippingAddress
+      }
+      this.apiService.updateShippinOrders(this.Id, model).subscribe((data:any) =>{
+        this.notificationService.success("Shipping Address updated successfuly");
+        this.closeModal();
+     })
+  }
+
     openUpdateModal(){
       this.dialog.open(this.updateModal,{
-        minWidth:'800px',
-        minHeight:'350px'
+        minWidth:'500px',
+        minHeight:'300px'
 
       })
     }

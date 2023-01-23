@@ -125,16 +125,20 @@
   }
 
   .offset{
-    margin-left: 20px;
+    margin-left: 35px;
 }
 
 .mat-form-field {
-    width: 60%;
+    width: 80%;
     margin-top: 10px;
   }
 
   .addOrder2{
-    margin-left: 520px;
+    margin-left: 550px;
     margin-bottom: 20px;
     margin-right: 10px;
+  }
+
+  .addOrder{
+    margin-left: 10px;
   }

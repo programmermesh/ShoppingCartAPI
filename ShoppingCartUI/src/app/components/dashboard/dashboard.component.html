@@ -107,43 +107,22 @@
   
     <!-------------------------------- Update Modal   ---------------------->
     <ng-template #updateModal>
-      <h1 mat-dialog-title>Edit Order</h1>
+      <h1 mat-dialog-title>Edit Shipping Address</h1>
       <div>
             <form [formGroup]="updateForm" autocomplete="off">
-              <div class="offset">
-                  <mat-form-field appearance="fill">
-                      <mat-label>ID</mat-label>
-                      <input matInput placeholder="ID" formControlName="Id" [(ngModel)]="selectedOrder.Id" readonly>
-                    </mat-form-field>
-
-                  <mat-form-field appearance="fill" class="offset">
-                      <mat-label>Product Name</mat-label>
-                      <input matInput placeholder="Product Name" formControlName="productName" [(ngModel)]="selectedOrder.ProductName" readonly>
-                    </mat-form-field>
-          
-                    <mat-form-field appearance="fill" class="offset">
-                      <mat-label>Currency</mat-label>
-                      <input matInput placeholder="currency" formControlName="unit" [(ngModel)]="selectedOrder.unit" readonly>
-                  </mat-form-field>
-              </div>
-              <div>   
-                <mat-form-field appearance="fill" class="offset">
-                  <mat-label>Enter Amount</mat-label>
-                  <input matInput placeholder="Amount" formControlName="amount" [(ngModel)]="selectedOrder.Amount" readonly>
-                </mat-form-field> 
-                
+              <div class=""> 
                   <mat-form-field appearance="fill" class="offset mat-form-field">
                       <mat-label>Enter Shipping Address</mat-label>
-                      <input matInput placeholder="Shipping Address" formControlName="shippingAddress" [(ngModel)]="selectedOrder.ShippingAddress" readonly>
+                      <textarea matInput placeholder="Shipping Address" formControlName="shippingAddress" [(ngModel)]="selectedOrder.ShippingAddress"></textarea>
                     </mat-form-field>
               </div>
       
               <div class="offset">
-                <button class="addOrder" mat-fab extended style="color: black;" (click)="closeModal()"> 
+                <button mat-fab extended style="color: black;" (click)="closeModal()"> 
                   <mat-icon>cancel</mat-icon>Cancel
                 </button>
-                <button mat-fab extended color="primary" style="color: white;"> 
-                  <mat-icon>save</mat-icon>Save
+                <button class="offset" (click)="updateShippinOrders()" class="addOrder" mat-fab extended color="warn" style="color: white;"> 
+                  <mat-icon>update</mat-icon>Update
                 </button>
               </div>
             </form>
@@ -186,7 +165,7 @@
               <button (click)="closeModal()" class="addOrder" mat-fab extended style="color: black;"> 
                 <mat-icon>cancel</mat-icon>Cancel
               </button>
-              <button (click)="createOrder()" mat-fab extended color="primary" style="color: white;"> 
+              <button class="addOrder" (click)="createOrder()" mat-fab extended color="primary" style="color: white;"> 
                 <mat-icon>save</mat-icon>Save
               </button>
             </div>
