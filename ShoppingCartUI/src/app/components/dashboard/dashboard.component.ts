@@ -1,8 +1,8 @@
-import {Component, AfterViewInit, ViewChild, OnInit, TemplateRef } from '@angular/core';
+import {Component, ViewChild, OnInit, TemplateRef } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog} from '@angular/material/dialog';
 import {MatPaginator} from '@angular/material/paginator';
-import {MatTableDataSource} from '@angular/material/table'
+import {MatTable, MatTableDataSource} from '@angular/material/table'
 import { OrderData } from 'src/app/Models/OrderData';
 import { ApiService } from 'src/app/services/api.service';
 import { NotificationService } from 'src/app/services/notification.service';
@@ -13,7 +13,7 @@ import { NotificationService } from 'src/app/services/notification.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit, AfterViewInit {
+export class DashboardComponent implements OnInit {
     title = 'ShoppingCart';
     selectedOrder: any;
     Id: number;
@@ -25,18 +25,20 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   orders: any[] = [];
   @ViewChild("updateModal", { static: true }) updateModal: TemplateRef<any>;
   @ViewChild("newModal", { static: true }) newModal: TemplateRef<any>;
+  @ViewChild("deleteModal", { static: true }) deleteModal: TemplateRef<any>;
   
   displayedColumns: string[] = ['Id', 'ProductName', 'Amount', 'OrderId', 'TrackNumber', 'ShippingAddress', 'OrderDate', 'Actions'];
   
-  @ViewChild(MatPaginator, {static: true}) paginator!: MatPaginator;
-  dataSource = new MatTableDataSource<OrderData>([]);
-
+  @ViewChild(MatPaginator, { static: true}) paginator!: MatPaginator;
+  
+  dataSource = new MatTableDataSource<any>([]);
+  
   
   constructor(public dialog: MatDialog, private _formBuilder: FormBuilder,
               private notificationService: NotificationService, 
               private apiService: ApiService) {
 
-    this.orderForm = this._formBuilder.group({
+                this.orderForm = this._formBuilder.group({
       productName: ["", [Validators.required]],
       amount: ["", Validators.required],
       shippingAddress: ["", Validators.required],
@@ -53,75 +55,23 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   }
   
   ngOnInit(): void {
-      this.getAllOrders();
-    //   this.orders = [
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    //     {
-    //     Id: 1, ProductName: "6789", Amount:1, ShippingAddress:"567890", OrderDate: "4567890-0", TrackNumber:"34567890"
-    //   },
-    // ]
+    this.getAllOrders();
+  }
+  
+  
+  /* ----------==========     OnSelected User    ==========---------- */
+  
+  onSelected(row: any) {
+    this.selectedOrder = row;
+    console.log(this.selectedOrder);
+  }
+  
+  /* ----------==========     Subscribing to the order service to create new order    ==========---------- */
+  createOrder(){
+    if (this.orderForm.invalid) {
+      return this.notificationService.error("Kindly fill all fields");
     }
-    
-    
-    
-    ngAfterViewInit() {
-      this.dataSource.paginator = this.paginator;
-    }
-    
-    /* ----------==========     OnSelected User    ==========---------- */
-    
-    onSelected(row: any) {
-      this.selectedOrder = row;
-      console.log(this.selectedOrder);
-    }
-    
-    /* ----------==========     Subscribing to the order service to create new order    ==========---------- */
-    createOrder(){
-      if (this.orderForm.invalid) {
-        return this.notificationService.error("Kindly fill all fields");
-      }
-      let model = {
+    let model = {
         "shippingAdress": this.orderForm.value.shippingAddress,
         "orderItemsDtoModel": 
         [
@@ -139,6 +89,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
         this.notificationService.success("Order created successfuly");
         this.orderForm.reset();
         this.closeModal();
+        window.location.reload();
       })
     }
     
@@ -156,22 +107,23 @@ export class DashboardComponent implements OnInit, AfterViewInit {
               case 2:
                 y.price.unit = "$"
                 break;
-              default:
-                y.price.unit = "€"
-            }
-            this.result.push(
-              {
-                "Id" :  x.id,
-                "TrackNumber" :  x.trackingNumber,
-                "OrderDate": x.orderDate,
-                "ShippingAddress": x.shippingAdress,
-                "OrderId": y.id,
-                "ProductName": y.productName,
-                "Amount": y.price.amount,
-                "Unit": y.price.unit
-              } )
-              console.log(this.result)
-              this.dataSource = new MatTableDataSource<OrderData>(this.result)
+                default:
+                  y.price.unit = "€"
+                }
+                this.result.push(
+                  {
+                    "Id" :  x.id,
+                    "TrackNumber" :  x.trackingNumber,
+                    "OrderDate": x.orderDate,
+                    "ShippingAddress": x.shippingAdress,
+                    "OrderId": y.id,
+                    "ProductName": y.productName,
+                    "Amount": y.price.amount,
+                    "Unit": y.price.unit
+                  } )
+                  console.log(this.result)
+                  this.dataSource = new MatTableDataSource<OrderData>(this.result)
+                  this.dataSource.paginator = this.paginator;
             });
             
         });
@@ -191,6 +143,18 @@ export class DashboardComponent implements OnInit, AfterViewInit {
      })
   }
 
+    /* ----------==========     Delete Order    ==========---------- */
+    deleteOrder(){
+      this.Id = this.selectedOrder.Id;
+      console.log(this.Id);
+      this.apiService.deleteOrder(this.Id).subscribe((data:any) =>{
+        this.notificationService.success("Orders deleted successfuly");
+        this.closeModal();
+        window.location.reload();
+     }
+    )
+  }
+
     openUpdateModal(){
       this.dialog.open(this.updateModal,{
         minWidth:'500px',
@@ -198,10 +162,19 @@ export class DashboardComponent implements OnInit, AfterViewInit {
 
       })
     }
+
     openNewModal(){
       this.dialog.open(this.newModal,{
         minWidth:'800px',
         minHeight:'350px'
+
+      })
+    }
+
+    openDeleteModal(){
+      this.dialog.open(this.deleteModal,{
+        minWidth:'200px',
+        minHeight:'150px'
 
       })
     }

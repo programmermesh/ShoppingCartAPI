@@ -83,7 +83,7 @@
               <button mat-icon-button (click)="onSelected(element)"  (click)="openUpdateModal()">
                 <mat-icon  style="color: yellow;">launch</mat-icon>        
               </button>
-              <button mat-icon-button>
+              <button mat-icon-button (click)="onSelected(element)" (click)="openDeleteModal()">
                 <mat-icon style="color: red;">delete</mat-icon>
               </button>
             </mat-cell>
@@ -123,6 +123,23 @@
                 </button>
                 <button class="offset" (click)="updateShippinOrders()" class="addOrder" mat-fab extended color="warn" style="color: white;"> 
                   <mat-icon>update</mat-icon>Update
+                </button>
+              </div>
+            </form>
+          </div>
+    </ng-template>
+
+    <!-------------------------------- Delete Modal   ---------------------->
+    <ng-template #deleteModal>
+      <h1 mat-dialog-title>Are you sure you want to delete?</h1>
+      <div>
+            <form [formGroup]="updateForm" autocomplete="off">
+              <div class="offset">
+                <button mat-fab extended style="color: black;" (click)="closeModal()"> 
+                  <mat-icon>cancel</mat-icon>No
+                </button>
+                <button class="offset" (click)="deleteOrder()" class="addOrder" mat-fab extended color="warn" style="color: white;"> 
+                  <mat-icon>delete</mat-icon>Yes
                 </button>
               </div>
             </form>

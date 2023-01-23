@@ -134,7 +134,7 @@
   }
 
   .addOrder2{
-    margin-left: 550px;
+    margin-left: 750px;
     margin-bottom: 20px;
     margin-right: 10px;
   }
@@ -142,3 +142,10 @@
   .addOrder{
     margin-left: 10px;
   }
+
+  .mat-column-ShippingAddress {
+    width: 50%;
+}
+  .mat-column-TrackNumber {
+    width: 50%;
+}

@@ -26,4 +26,11 @@ export class ApiService {
     return this._http.put(AppSettings.API_ENDPOINT + `api/Order/Update?id=${id}`, model);
   }
 
+   /* ----------==========     Get All Orders    ==========---------- */
+   deleteOrder(id: any) {
+    return this._http.delete(AppSettings.API_ENDPOINT + `api/Order/${id}`);
+  }
+
+  
+
 }
